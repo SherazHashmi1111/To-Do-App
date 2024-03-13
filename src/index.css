@@ -26,3 +26,8 @@ color: #eee;
         font-size: 25%;
     }
 }
+@media (max-width: 280px) {
+    html{
+        font-size: 18.75%;
+    }
+}

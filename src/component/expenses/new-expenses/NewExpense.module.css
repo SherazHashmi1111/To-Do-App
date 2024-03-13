@@ -33,9 +33,13 @@ button:hover{
     background-color: #3a51d6;
 }
 
+@media (min-width: 775px) {
+    .new-expense{
+        width: 60%;
+    }
+}
 @media (max-width: 770px) {
     .new-expense{
         width: 90%;
-        overflow-x: hidden;
     }
 }
