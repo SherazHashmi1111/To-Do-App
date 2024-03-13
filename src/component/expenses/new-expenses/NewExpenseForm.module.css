@@ -1,0 +1,79 @@
+.form{
+    padding: 2rem;
+    font-size: 2.4rem;
+    color: #333;
+}
+.inputs__box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+    margin-bottom: 4rem;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+}
+.input label{
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.input input{
+    padding: 1rem 2rem;
+    font-size: 2.4rem;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+}
+.input input:focus, 
+.input input:active{
+    border: 1px solid rgb(174, 51, 51);
+    background-color: white;
+}
+.actions{
+    display: flex;
+    justify-content: flex-end;
+    padding: 4rem 0;
+    gap: 2rem;
+}
+
+
+/* ..................................btn......................... */
+/* CSS */
+.actions button {
+    appearance: button;
+    backface-visibility: hidden;
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.15;
+    margin: 12px 0 0;
+    outline: none;
+    overflow: hidden;
+    padding: 1rem 1.6rem;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s,box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    background-color: #6a80fd;
+}
+.btn:hover,
+.btnAlt:hover{
+  background-color: #3a51d6;
+}
+
+
+

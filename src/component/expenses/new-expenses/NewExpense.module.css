@@ -1,0 +1,41 @@
+
+.new-expense{
+    background-color: skyblue;
+    margin: 2rem auto;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+}
+.add-expense{
+    margin-top: 10rem;
+}
+button{
+    overflow: hidden;
+    padding: 1.5rem 3rem;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s,box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    background-color: #6a80fd;
+    border: 1px solid white;
+    border-radius: .5rem;
+    font-size: 3.2rem;
+    cursor: pointer;
+    color: #eee;
+}
+button:hover{
+    background-color: #3a51d6;
+}
+
+@media (max-width: 770px) {
+    .new-expense{
+        width: 90%;
+        overflow-x: hidden;
+    }
+}
