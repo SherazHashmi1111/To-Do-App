@@ -1,0 +1,16 @@
+.filter{
+    width: 100%;
+    padding: 2rem 8rem 2rem 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter span{
+    font-size: 2.8rem;
+}
+.filter select{
+    font-size: 2.8rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
