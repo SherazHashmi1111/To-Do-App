@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./ExpenseItem.module.css";
 
 function ExpenseItem(props) {
-  const day = props.date.toLocaleDateString("ur-PK", { weekday: "long" });
+  const day = props.date.toLocaleDateString("ur-PK", { day: "2-digit" });
   const year = props.date.toLocaleDateString("ur-PK", { year: "numeric" });
   const month = props.date.toLocaleDateString("ur-PK", { month: "long" });
   const price = props.price.toFixed(2);
