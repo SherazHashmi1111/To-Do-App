@@ -33,11 +33,17 @@ function App() {
       return [data, ...prev];
     });
   };
+  const deleteExpenseHandler = (id) => {
+    setNewExpenses((prevExpenses) => {
+      const items = prevExpenses.filter(expense  => expense.id !== id);
+      return items
+    });
+  } 
   return (
     <div className={styles.App}>
       <Header/>
       <NewExpense newExpenseData={newExpenseDataHandler} />
-      <Expenses expenses={expenses} />
+      <Expenses expenses={expenses} onDelete={deleteExpenseHandler}/>
     </div>
   );
 }

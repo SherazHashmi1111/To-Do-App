@@ -12,7 +12,7 @@
 .add-expense{
     margin-top: 10rem;
 }
-button{
+.new-expense button{
     overflow: hidden;
     padding: 1.5rem 3rem;
     position: relative;
@@ -30,6 +30,6 @@ button{
     cursor: pointer;
     color: #eee;
 }
-button:hover{
+.new-expense button:hover{
     background-color: #3a51d6;
 }

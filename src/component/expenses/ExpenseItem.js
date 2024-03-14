@@ -7,6 +7,10 @@ function ExpenseItem(props) {
   const month = props.date.toLocaleDateString("ur-PK", { month: "long" });
   const price = props.price.toFixed(2);
 
+  const deleteHandler = () => {
+    props.onDelete(props.id);
+  }
+
   return (
     <div className={styles["expense-item"]}>
       <div className={styles["expense-item__info"]}>
@@ -17,7 +21,10 @@ function ExpenseItem(props) {
         </div>
         <h3>{props.title}</h3>
       </div>
-      <p>$ {price}</p>
+      <div className={styles.actions}>
+        <p>$ {price}</p>
+        <button onClick={deleteHandler}>Delete</button>
+      </div>
     </div>
   );
 }

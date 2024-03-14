@@ -12,6 +12,9 @@ function Expenses(props) {
     return expense.date.getFullYear().toString() === filteredYear;
   });
 
+  const deleteExpense = (e) => {
+ props.onDelete(e);
+  }
 
   return (
     <div className={styles.expenses}>
@@ -19,7 +22,7 @@ function Expenses(props) {
         filteredYear={filteredYearHandler}
         selected={filteredYear}
       />
-      <ExpenseList expenses={filteredExpenses} />
+      <ExpenseList expenses={filteredExpenses} onDeleteExpense={deleteExpense}/>
     </div>
   );
 }
