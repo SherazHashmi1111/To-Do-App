@@ -71,7 +71,7 @@ function NewExpenseForm(props) {
             type="number"
             name="price"
             id="price"
-            step="1"
+            step="any"
             min='0'
             max='99999'
             onChange={priceChangeHandler}
