@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Expenses from "./component/expenses/Expenses";
 import NewExpense from "./component/new-expenses/NewExpense";
 import styles from './App.module.css' 
+import Header from "./component/pages/Header";
 
 const dummyExpenses = [
   {
@@ -34,6 +35,7 @@ function App() {
   };
   return (
     <div className={styles.App}>
+      <Header/>
       <NewExpense newExpenseData={newExpenseDataHandler} />
       <Expenses expenses={expenses} />
     </div>
